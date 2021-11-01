@@ -267,6 +267,14 @@ console.log(countMovies(movies))
     Write a function called onlyTheTitles which creates an array with just the titles of the movies contained in the provided movies array.
 */
 
+const onlyTheTitles = function (array) {
+  moviesTitles=[]
+  for (let i=0; i<array.length; i++) {
+    moviesTitles.push(array[i].Title)
+  } return moviesTitles
+}
+console.log(onlyTheTitles(movies))
+
 /* EXERCISE 15
    Write a function called onlyInThisMillennium which returns only the movies produced in this millennium from the provided movies array.
 */
