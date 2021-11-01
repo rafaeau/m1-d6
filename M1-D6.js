@@ -219,6 +219,13 @@ console.log(howManyDays(20-06-1991)) */
    Write a function called isTodayMyBirthday which should return true if today's your birthday, false otherwise.
 */
 
+const isTodayMyBirthday = function () {
+  const todayDate = new Date().toLocaleDateString()
+  let result = todayDate.toString().startsWith("01/11/2021") ? true : false
+  return result
+}
+console.log(isTodayMyBirthday())
+
 // JS Arrays & Objects
 // NOTE: the movies array used in some exercises is defined at the end of this file
 
