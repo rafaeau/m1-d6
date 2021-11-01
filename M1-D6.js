@@ -59,6 +59,13 @@ console.log(removeAge(me))
    Write a piece of code for programmatically adding to the me object you defined before an array called skills, containing the programming languages you know right now.
 */
 
+const addSkills = function (obj, mySkills) {
+  obj.skills = mySkills
+  return obj  
+}
+languages = ["HTML", "CSS", "JavaScript"]
+console.log(addSkills(me, languages))
+
 /* EXERCISE G
    Write a piece of code for programmatically removing the last skill from the skills array inside the me object.
 */
