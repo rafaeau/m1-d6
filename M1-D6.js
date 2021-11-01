@@ -95,6 +95,12 @@ console.log(dice())
     Write a function called whoIsBigger which receives 2 numbers as parameters and returns the biggest one.
 */
 
+const whoIsBigger = function (firstNum, secondNum) {
+  let bigger = firstNum > secondNum ? "The biggest number is: " + firstNum : "The biggest number is: " + secondNum
+  return bigger
+}
+console.log(whoIsBigger(5, 43))
+
 /* EXERCISE 3
     Write a function called splitMe which receives a string as a parameter and returns an array with every word in that string.
     Ex.: splitMe("I love coding") => returns ["I", "Love", "Coding"]
