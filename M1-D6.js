@@ -279,6 +279,14 @@ console.log(onlyTheTitles(movies))
    Write a function called onlyInThisMillennium which returns only the movies produced in this millennium from the provided movies array.
 */
 
+const onlyInThisMillennium = function (array) {
+  movies2000=[]
+  for (let i=0; i<array.length; i++) {
+    if (array[i].Year >= 2000) {movies2000.push(array[i].Title, array[i].Year)}
+  } return movies2000
+}
+console.log(onlyInThisMillennium(movies))
+
 /* EXERCISE 16 
     Write a function called getMovieById which receives an id as a parameter and returns the movie with the given id from the provided movies array.
 */
