@@ -190,6 +190,20 @@ console.log(whatDayIsIt())
     }
 */
 
+const rollTheDices = function (numberOfRolls) {
+    let sum = 0
+    arraySum = []
+    for (let i=0; i<=numberOfRolls; i++){
+    let randomNum = Math.floor(Math.random() * (1 - 6) + 6)
+    sum = randomNum + i
+    arraySum.push(sum)
+    }
+    let result = ("The sum of all values extracted is: " + sum + "," + " and the single values of the dicerolls are: " + arraySum + ".")
+    return result
+    /* sumarraySum.reduce((a, b) => a + b) */
+}
+console.log(rollTheDices(5))
+
 /* EXERCISE 9
    Write a function called howManyDays which receives a date as a parameter and returns the number of days passed since that date.
 */
