@@ -234,6 +234,14 @@ console.log(isTodayMyBirthday())
    and returns the given object after deleting its property named as the given string.
 */
 
+objExerc10 = {name: "Rafael", surname: "Ferreira", age: 29, nationality: "brazilian"}
+
+const deleteProp = function (objToChange, stringToDelete) {
+  delete objToChange.stringToDelete;
+  return objToChange
+}
+console.log(deleteProp(objExerc10, objExerc10.nationality))
+
 /* EXERCISE 12
     Write a function called oldestMovie which finds the oldest movie in the provided movies array.
 */
