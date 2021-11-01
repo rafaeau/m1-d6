@@ -138,6 +138,12 @@ console.log(onlyLetters("Berlin is 784 years old"))
    Write a function called isThisAnEmail which receives a string as a parameter and returns true if the string is a valid email address.
 */
 
+const isThisAnEmail = function (isEmail) {
+let result = isEmail.includes("@", ".com") ? true : false
+return result
+}
+console.log(isThisAnEmail("rafaelnevesf@gmail.com"))
+
 /* EXERCISE 7
    Write a function called whatDayIsIt that should return the current day of the week.
 */
