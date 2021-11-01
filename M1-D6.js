@@ -246,6 +246,14 @@ console.log(deleteProp(objExerc10, objExerc10.nationality))
     Write a function called oldestMovie which finds the oldest movie in the provided movies array.
 */
 
+const oldestMovie = function (array) {
+  moviesYears=[]
+  for (let i=0; i<array.length; i++) {
+    moviesYears.push(array[i].Year)
+  } return Math.min(...moviesYears)
+}
+console.log(oldestMovie(movies))
+
 /* EXERCISE 13
     Write a function called countMovies which returns the number of movies contained in the provided movies array.
 */
