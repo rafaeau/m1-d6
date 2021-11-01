@@ -158,7 +158,7 @@ const whatDayIsIt = function () {
   let day5 = "Friday"
   let day6 = "Saturday"
 
-  let day = new Date();
+  let day = new Date()
   let dayWeek = day.getDay()
 
   if (dayWeek === 0) {
@@ -207,6 +207,13 @@ console.log(rollTheDices(5))
 /* EXERCISE 9
    Write a function called howManyDays which receives a date as a parameter and returns the number of days passed since that date.
 */
+
+/* const howManyDays = function (dateToCalc) {
+  const today = new Date()
+  let todayDate = today.getUTCDate()
+  return todayDate - dateToCalc
+}
+console.log(howManyDays(20-06-1991)) */
 
 /* EXERCISE 10
    Write a function called isTodayMyBirthday which should return true if today's your birthday, false otherwise.
