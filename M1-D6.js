@@ -70,6 +70,16 @@ console.log(addSkills(me, languages))
    Write a piece of code for programmatically removing the last skill from the skills array inside the me object.
 */
 
+delete me.skills.pop()
+console.log(me)
+
+/* const removeLastItem = function (obj) {
+  let item = obj.skills
+  item.slice(-1)
+  return obj
+}
+console.log(me) */
+
 // JS Functions
 /* EXERCISE 1
     Write a function called dice; it should randomize an integer number between 1 and 6.
