@@ -349,12 +349,6 @@ console.log(searchAndDivide("avengers"))
    Write a function called "removeIndex" which receives a number as a parameter and returns the provided movies array without the element in the given position.
 */
 
-const removeIndex = function (numberIndex) {
-  movies.splice(numberIndex, 1)
-  return movies
-}
-console.log(removeIndex(0))
-
 // [EXTRAS] JS Advanced
 
 /* EXERCISE 21
